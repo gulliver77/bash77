@@ -1,0 +1,136 @@
+=== Rapport de mise à jour système du 2025-01-29 ===
+
+=== Exécution de apt update ===
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Atteint :2 http://oem.archive.canonical.com jammy InRelease
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Atteint :4 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Atteint :5 https://dl.google.com/linux/chrome/deb stable InRelease
+Atteint :6 http://dell.archive.canonical.com jammy InRelease
+Atteint :7 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+1 paquet peut être mis à jour. Exécutez « apt list --upgradable » pour le voir.
+
+=== Exécution de apt upgrade ===
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants ont été installés automatiquement et ne sont plus nécessaires :
+  linux-headers-6.8.0-50-generic linux-hwe-6.8-headers-6.8.0-50
+  linux-hwe-6.8-tools-6.8.0-50 linux-image-6.8.0-50-generic
+  linux-modules-6.8.0-50-generic linux-modules-extra-6.8.0-50-generic
+  linux-modules-nvidia-535-6.8.0-50-generic
+  linux-objects-nvidia-535-6.8.0-50-generic
+  linux-signatures-nvidia-6.8.0-50-generic linux-tools-6.8.0-50-generic
+Veuillez utiliser « sudo apt autoremove » pour les supprimer.
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+  gsasl-common libheif1 imagemagick libopenexr25 libmagickcore-6.q16-6-extra
+  libgsasl7 libavcodec58 libmagickwand-6.q16-6 libavutil56 imagemagick-6.q16
+  libmagickcore-6.q16-6 libgsl27 libswresample3 imagemagick-6-common
+  libavformat58 libgslcblas0 libde265-0
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+Les paquets suivants ont été conservés :
+  wireless-regdb
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+
+=== Exécution de apt autoremove ===
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les paquets suivants seront ENLEVÉS :
+  linux-headers-6.8.0-50-generic linux-hwe-6.8-headers-6.8.0-50
+  linux-hwe-6.8-tools-6.8.0-50 linux-image-6.8.0-50-generic
+  linux-modules-6.8.0-50-generic linux-modules-extra-6.8.0-50-generic
+  linux-modules-nvidia-535-6.8.0-50-generic
+  linux-objects-nvidia-535-6.8.0-50-generic
+  linux-signatures-nvidia-6.8.0-50-generic linux-tools-6.8.0-50-generic
+0 mis à jour, 0 nouvellement installés, 10 à enlever et 1 non mis à jour.
+Après cette opération, 903 Mo d'espace disque seront libérés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 354957 fichiers et répertoires déjà installés.)
+Suppression de linux-headers-6.8.0-50-generic (6.8.0-50.51~22.04.1) ...
+Suppression de linux-hwe-6.8-headers-6.8.0-50 (6.8.0-50.51~22.04.1) ...
+Suppression de linux-tools-6.8.0-50-generic (6.8.0-50.51~22.04.1) ...
+Suppression de linux-hwe-6.8-tools-6.8.0-50 (6.8.0-50.51~22.04.1) ...
+Suppression de linux-modules-nvidia-535-6.8.0-50-generic (6.8.0-50.51~22.04.1+1) ...
+linux-image-nvidia-6.8.0-50-generic: removing .ko files
+Suppression de linux-signatures-nvidia-6.8.0-50-generic (6.8.0-50.51~22.04.1+1) ...
+Suppression de linux-image-6.8.0-50-generic (6.8.0-50.51~22.04.1) ...
+/etc/kernel/prerm.d/dkms:
+dkms: removing: nvidia 535.183.01 (6.8.0-50-generic) (x86_64)
+Module nvidia-535.183.01 for kernel 6.8.0-50-generic (x86_64).
+Before uninstall, this module version was ACTIVE on this kernel.
+
+nvidia.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-50-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+nvidia-modeset.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-50-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+nvidia-drm.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-50-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+nvidia-uvm.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-50-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+nvidia-peermem.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-50-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+/etc/kernel/postrm.d/initramfs-tools:
+update-initramfs: Deleting /boot/initrd.img-6.8.0-50-generic
+/etc/kernel/postrm.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Sourcing file `/etc/default/grub.d/oem-flavour.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-52-generic
+Found initrd image: /boot/initrd.img-6.8.0-52-generic
+Found linux image: /boot/vmlinuz-6.8.0-51-generic
+Found initrd image: /boot/initrd.img-6.8.0-51-generic
+Memtest86+ needs a 16-bit boot, that is not available on EFI, exiting
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Suppression de linux-modules-extra-6.8.0-50-generic (6.8.0-50.51~22.04.1) ...
+Suppression de linux-modules-6.8.0-50-generic (6.8.0-50.51~22.04.1) ...
+Suppression de linux-objects-nvidia-535-6.8.0-50-generic (6.8.0-50.51~22.04.1+1) ...
+
+=== Fin du rapport ===
